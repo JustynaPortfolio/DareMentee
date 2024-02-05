@@ -1,0 +1,99 @@
+{
+    "name": "pipexercise4",
+    "properties": {
+        "activities": [
+            {
+                "name": "exercise4",
+                "type": "Copy",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "source": {
+                        "type": "AzureSqlSource",
+                        "queryTimeout": "02:00:00",
+                        "partitionOption": "None"
+                    },
+                    "sink": {
+                        "type": "AzureSqlSink",
+                        "writeBehavior": "insert",
+                        "sqlWriterUseTableLock": false,
+                        "disableMetricsCollection": false
+                    },
+                    "enableStaging": false,
+                    "translator": {
+                        "type": "TabularTranslator",
+                        "mappings": [
+                            {
+                                "source": {
+                                    "name": "EmployeeID",
+                                    "type": "int",
+                                    "precision": 10
+                                },
+                                "sink": {
+                                    "name": "ID",
+                                    "type": "int",
+                                    "precision": 10
+                                }
+                            },
+                            {
+                                "source": {
+                                    "name": "LastName",
+                                    "type": "nvarchar"
+                                },
+                                "sink": {
+                                    "name": "LastName",
+                                    "type": "varchar"
+                                }
+                            },
+                            {
+                                "source": {
+                                    "name": "FirstName",
+                                    "type": "nvarchar"
+                                },
+                                "sink": {
+                                    "name": "FirstName",
+                                    "type": "varchar"
+                                }
+                            },
+                            {
+                                "source": {
+                                    "name": "Title",
+                                    "type": "nvarchar"
+                                },
+                                "sink": {
+                                    "name": "Title",
+                                    "type": "varchar"
+                                }
+                            }
+                        ],
+                        "typeConversion": true,
+                        "typeConversionSettings": {
+                            "allowDataTruncation": true,
+                            "treatBooleanAsNumber": false
+                        }
+                    }
+                },
+                "inputs": [
+                    {
+                        "referenceName": "AzureSqlTableEx4",
+                        "type": "DatasetReference"
+                    }
+                ],
+                "outputs": [
+                    {
+                        "referenceName": "SinkTable4",
+                        "type": "DatasetReference"
+                    }
+                ]
+            }
+        ],
+        "annotations": []
+    }
+}
