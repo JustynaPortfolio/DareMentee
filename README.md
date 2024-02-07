@@ -9,4 +9,7 @@ Kolejne etapy projektu to:
 - Dodanie do Azure Key Vault loginu i hasła do SQL db, service principal id i sekretu.
 - Utworzenie Azure Data Factory
    - Pierwsza wersja: skopiowanie danych przy użyciu narzędzia Copy Data Tool
-   - Druga wersja: 
+   - Druga wersja:
+ 
+ 
+![Azure project vpd](https://github.com/JustynaPortfolio/DareMentee/assets/159054537/92f242c1-4788-4f5b-81bf-ffc220d5651b)
