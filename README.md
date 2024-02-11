@@ -7,19 +7,10 @@ Steps of the project:
 - Creating a Storage Account, with two containers within it.
 - Creating a Service Principal - App registration.
 - Integrating services with Key Vault.
-- Creating Azure Data Factory.
+- Building ETLs using Data Factory.
+- Creating Azure Databricks workspace.
+- Using Terraform to create: Resource Group, SQL Server, Storage Account and SQL Database.
 
-- Utworzenie Azure Data Factory
-   - Pierwsza wersja: skopiowanie danych przy użyciu narzędzia Copy Data Tool
-   - Druga wersja:
-
- Za pomocą kodu Terraform znajdującego się w pliku main.tf można utworzyć następujące zasoby:
-
-1. Resource Group - "terra-resources"
-2. SQL Server - "dareitprojectsqlserver"
-3. Storage Account - "justynastorageaccount" 
-4. Dwa kontenery w "justynastorageaccount": "bronze" i "silver"
-5. SQL Database - "myprojectdb"
 
  
-![Azure project vpd](https://github.com/JustynaPortfolio/DareMentee/assets/159054537/92f242c1-4788-4f5b-81bf-ffc220d5651b)
+  ![Azure project vpd](https://github.com/JustynaPortfolio/DareMentee/assets/159054537/92f242c1-4788-4f5b-81bf-ffc220d5651b)
