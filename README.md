@@ -1,12 +1,15 @@
-# Mini projekt do analizy danych
-Projekt polegał na stworzeniu w chmurze Azure resource group, a w niej zasobów takich jak: Key Vault, Azure SQL Database i Azure Blob Storage.
+# Cloud based data analytics platform
+The project involved creating a data analytics platform in the Azure cloud. To achieve this goal, the following components were used: SQL Database, Blob Storage, Data Factory, Databricks.
 
-Kolejne etapy projektu to:
-- Utworzenie dwóch repozytoriów w Azure DevOps
-- Wczytanie do SQL Database przykładowej bazy danych z GitHub.
-- Stworzenie Storage Account, a w nim dwóch kontenerów.
-- Stworzonie Service Principal - App registration.
-- Dodanie do Azure Key Vault loginu i hasła do SQL db, service principal id i sekretu.
+Steps of the project:
+- Creating two repositories in Azure DevOps.
+- Loading a sample database from GitHub into SQL Database.
+- Creating a Storage Account, with two containers within it.
+- Creating a Service Principal - App registration.
+- Integrating services with Key Vault.
+- Addition of login and password for SQL Database, service principal ID, and secret to Azure Key Vault.
+- Creating Azure Data Factory.
+
 - Utworzenie Azure Data Factory
    - Pierwsza wersja: skopiowanie danych przy użyciu narzędzia Copy Data Tool
    - Druga wersja:
