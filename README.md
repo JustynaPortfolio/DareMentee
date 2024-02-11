@@ -7,7 +7,6 @@ Steps of the project:
 - Creating a Storage Account, with two containers within it.
 - Creating a Service Principal - App registration.
 - Integrating services with Key Vault.
-- Addition of login and password for SQL Database, service principal ID, and secret to Azure Key Vault.
 - Creating Azure Data Factory.
 
 - Utworzenie Azure Data Factory
