@@ -12,8 +12,8 @@ resource "azurerm_sql_server" "first_project_server" {
   resource_group_name          = azurerm_resource_group.terra_group.name
   location                     = azurerm_resource_group.terra_group.location
   version                      = "12.0"
-  administrator_login          = "justynaadmin"
-  administrator_login_password = "Diuna123!"
+  administrator_login          = <login>
+  administrator_login_password = <password>
 
   
 }
