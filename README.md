@@ -13,6 +13,14 @@ Steps of the project:
 - Utworzenie Azure Data Factory
    - Pierwsza wersja: skopiowanie danych przy użyciu narzędzia Copy Data Tool
    - Druga wersja:
- 
+
+ Za pomocą kodu Terraform znajdującego się w pliku main.tf można utworzyć następujące zasoby:
+
+1. Resource Group - "terra-resources"
+2. SQL Server - "dareitprojectsqlserver"
+3. Storage Account - "justynastorageaccount" 
+4. Dwa kontenery w "justynastorageaccount": "bronze" i "silver"
+5. SQL Database - "myprojectdb"
+
  
 ![Azure project vpd](https://github.com/JustynaPortfolio/DareMentee/assets/159054537/92f242c1-4788-4f5b-81bf-ffc220d5651b)
