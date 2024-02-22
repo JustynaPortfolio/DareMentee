@@ -1,11 +1,11 @@
 # Cloud based data analytics platform
-The project involved creating a data analytics platform in the Azure cloud. To achieve this goal, the following components were used: SQL Database, Blob Storage, Data Factory, Databricks.
+The project involved creating a data analytics platform in the Azure cloud. To achieve this goal, the following components were used: SQL Database, Blob Storage, Data Factory, Databricks, Azure DevOps.
 
 Steps of the project:
 - Creating two repositories in Azure DevOps.
 - Loading a sample database from GitHub into SQL Database.
 - Creating a Storage Account, with two containers within it.
-- Creating a Service Principal - App registration.
+- Creating a Service Principal.
 - Integrating services with Key Vault.
 - Building ETLs using Data Factory.
 - Creating Azure Databricks workspace.
